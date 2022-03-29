@@ -23,7 +23,7 @@ body {
     background-color: var(--primary-whity-color);
     color: var(--primary-text-color);
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
     font-size:inherit;
     font-weight: 400;
 }
@@ -147,6 +147,7 @@ header .activ {
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-top: 10px;
 }
 .trainer {
     background-color: var(--secondary-bgr-color);
