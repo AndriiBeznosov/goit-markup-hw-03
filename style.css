@@ -9,6 +9,13 @@
     --button-hover : #188CE8;
 
 }
+    
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -16,25 +23,47 @@ body {
     background-color: var(--primary-whity-color);
     color: var(--primary-text-color);
 }
+h1,h2,h3,h4,h5,h6 {
+    font-size:inherit;
+    font-weight: 400;
+}
 ul {
     list-style: none;  
+}
+header {
+    border-bottom: 1px solid #ECECEC
+    ;
 }
 
 header .activ {
     color: var(--accent-color);
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 /* header страницы index и portfolio */
+.flex{
+    display: flex;
+}
 .logo-header {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     color: var(--logo-color);
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 15px;
 }
 .logo-color {
     color: var(--accent-color);
+}
+.header-table {
+    padding-top: 32px;
+    padding-left: 93px;
 }
 .table-nav {
     font-weight: 500;
@@ -43,14 +72,21 @@ header .activ {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
+    padding-right: 50px;
+}
+.table-info {
+    margin-left: auto;
+    padding-right: 15px;
 }
 .table-info-link {
+    display: block;
     font-weight: 500;
-    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--link-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-left: 50px;
 }
 .table-nav:hover,
 .table-nav:focus,
@@ -70,6 +106,7 @@ header .activ {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-whity-color);
+    padding-top: 200px;
 }
 /* main страницы index */
 .main-btm {
@@ -81,21 +118,32 @@ header .activ {
     letter-spacing: 0.06em;
     color: var(--primary-whity-color);
     cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    padding: 10px 32px;
 }
 .main-btm:hover,
 .main-btm:focus {
     background-color: var(--button-hover);
 }
+.box {
+    margin-top: 80px;
+}
+.container-card {
+    display: flex;
+    justify-content: space-around;
+}
+.container-info {
+    width: 270px;
+}
 .main-subtitle {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 .main-text {
-    font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #757575;
@@ -109,7 +157,19 @@ header .activ {
     line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 50px;
 }
+.section-subtitle-photo,
+.trainer-card {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 94px;
+}
+.section-subtitle-trainer {
+    padding-top: 94px;
+
+}
+
 .section-trainer {
     font-weight: 500;
     font-size: 16px;
@@ -117,6 +177,7 @@ header .activ {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    padding-top: 30px;
 }
 .coach-profession {
     font-size: 16px;
@@ -125,19 +186,23 @@ header .activ {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--link-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 /* footer страницы index и portfolio */
 .footer {
     background-color: var(--bgr-color);
 }
 .footer-logo {
-    font-family: 'Raleway';
+    display: block;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
     color: var(--primary-whity-color);
     text-decoration: none;
+    padding-top: 60px;
 }
 .footer-logo-color {
     color: var(--accent-color);
@@ -146,24 +211,34 @@ header .activ {
     font-style: normal;
 }
 .footer-addres {
-    font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--primary-whity-color);
+    padding-top: 20px;
 
 }
 .footer-info-link {
-    font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    padding-top: 9px;
+}
+.address {
+    padding-bottom: 60px;
 }
 .footer-info-link:hover,
 .footer-info-link:focus {
     color: rgba(255, 255, 255, 0.9);
 }
 /* main страницы portfolio */
+.box-button {
+    padding-top: 94px;
+}
+.container-button {
+    display: flex;
+    justify-content: center;
+}
 .main-btm-content {
     background-color: #F5F4FA;
     font-weight: 500;
@@ -172,6 +247,9 @@ header .activ {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    padding: 6px 22px;
+    border-radius: 4px;
+    margin: 0 4px;
 }
 .main-btm-content:hover,
 .main-btm-content:focus {
@@ -182,6 +260,15 @@ header .activ {
     background-color: var(--accent-color);
     color: var(--primary-whity-color);
 }
+.box-project {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.box-project>li:nth-child(-n + 6) {
+    margin-bottom: 30px;
+}
 .link-project {
     text-decoration: none;
 }
@@ -191,10 +278,15 @@ header .activ {
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    padding-top: 20px;
+    padding-left: 24px;
 }
 .main-web {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--link-color);
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 20px;
 }
