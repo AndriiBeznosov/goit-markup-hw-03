@@ -16,11 +16,6 @@
     box-sizing: border-box;
 }
 
-/* * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-} */
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -56,10 +51,6 @@ li {
 header {
     border-bottom: 1px solid var(--hero-border-color);
 }
-/* a {
-    box-sizing: border-box;
-    display: block;
-} */
 
 header .activ {
     color: var(--accent-color);
@@ -165,9 +156,20 @@ header .activ {
 .main-btm:focus {
     background-color: var(--button-hover);
 }
-.hidden-title {
-    visibility: hidden;
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
 .benefits-table {
     display: flex;
 }
@@ -192,7 +194,7 @@ header .activ {
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #757575;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 .work {
     padding-top: 0;
@@ -345,18 +347,18 @@ header .activ {
     margin-left: -30px;
 }
 .tehno-item {
-      max-width: 370px;
-      margin-top: 30px;
-      margin-left: 30px;
-      flex-basis: calc(100% / - 30px);
+    max-width: 370px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / - 30px);
 }
 .tehno-link {
     text-decoration: none;
 }
 .tehno-card {
     padding: 20px 24px;
-     border-right: 1px solid var(--hero-border-color);
-      border-bottom: 1px solid var(--hero-border-color);border-left: 1px solid var(--hero-border-color);
+    border-right: 1px solid var(--hero-border-color);
+    border-bottom: 1px solid var(--hero-border-color);border-left: 1px solid var(--hero-border-color);
 
 }
 .tehno-title {
